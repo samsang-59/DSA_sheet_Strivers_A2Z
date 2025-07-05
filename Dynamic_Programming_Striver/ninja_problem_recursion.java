@@ -5,7 +5,7 @@ public class ninja_problem_recursion {
     public static int find_max_points(int index,int PrevTask,int[][] arr){
        if(index==0){
            int max = Integer.MIN_VALUE;
-           for(int i=0;i<arr.length;i++){
+           for(int i=0;i<arr[0].length;i++){
                if(i!=PrevTask){
                    max = Math.max(max,arr[index][i]);
                }
