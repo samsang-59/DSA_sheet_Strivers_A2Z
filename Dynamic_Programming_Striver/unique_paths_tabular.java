@@ -2,8 +2,6 @@ package Dynamic_Programming_Striver;
 
 public class unique_paths_tabular {
     public static int find_ans(int[][] arr,int[][] dp){
-
-
         for(int row=0;row<arr.length;row++){
             for(int col=0;col<arr[0].length;col++){
                 if(row==0 && col==0) dp[row][col] = 1;
