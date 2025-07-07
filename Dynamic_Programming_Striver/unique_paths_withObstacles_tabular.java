@@ -4,7 +4,7 @@ public class unique_paths_withObstacles_tabular {
     public static int find_ans(int[][] arr, int[][] dp){
         for(int row=0;row<arr.length;row++){
             for(int col=0;col<arr[0].length;col++){
-                if(row==0 && col==0) dp[row][col] = 1;
+                if((row==0 && col==0) && (arr[row][col]!=1)) dp[row][col] = 1;
                 else{
                         int left = 0,up = 0;
                         if(col>0 && arr[row][col]!=1) left = dp[row][col-1];
