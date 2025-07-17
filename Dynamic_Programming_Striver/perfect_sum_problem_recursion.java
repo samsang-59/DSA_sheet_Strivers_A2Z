@@ -9,12 +9,10 @@ public class perfect_sum_problem_recursion {
             return 0;
         }
 
+
+        int pick = find_ans(arr,index-1,target-arr[index]);
         int not_pick = find_ans(arr,index-1,target);
-        int pick = 0;
-        if(arr[index]<=target){
-            pick = find_ans(arr,index-1,target-arr[index]);
-        }
-        return pick + not_pick ;
+        return pick + not_pick;
     }
     public static void main(String[] args) {
         int[] arr = {0,0,1};
